@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1b8096bb1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super Value Deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & upto 70% off!</p>
+        <button><a href="shop.html">Shop Now</a></button>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html'">
+                <img src="./img/products/f1.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f1.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f2.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f2.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f3.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f3.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f4.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f4.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f5.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f5.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f6.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f6.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f7.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f7.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f8.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/f8.jpg')">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% Off</span> - All T-Shirts & Accessories</h2>
+        <button class="normal" onclick="window.location.href='shop.html';">Explore More</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="./img/products/n1.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n1.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/n2.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n2.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/n3.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n3.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/n4.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n4.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/n5.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n5.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/n6.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n6.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/n7.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n7.jpg')">Add To Cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/products/n8.jpg" alt="">
+                <div class="desc">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377;700</h4>
+                </div>
+                <button class="normal" onclick="addToCart('Cartoon Astronaut T-Shirts', 'adidas', 700, './img/products/n8.jpg')">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="normal" onclick="window.location.href='shop.html';">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>spring/summer</h4>
+            <h2>upcoming season</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="normal" onclick="window.location.href='shop.html';">Collection</button>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

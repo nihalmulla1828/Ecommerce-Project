@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1b8096bb1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cart-items">
+        <h2>Your Cart</h2>
+        <table id="cart-table">
+            <thead id="cart-head">
+                <tr>
+                    <td>Image</td>
+                    <td>Brand</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                </tr>
+            </thead>
+            <tbody id="cart-container"></tbody>
+        </table>
+        <h4 id="cart-h4"></h4>
+        <button id="cartBtn" onclick="clearCart()" class="normal">Clear Cart</button>
+    </section>
+
+    <script>
+        function loadCartItems(){
+
+            let cartItems = JSON.parse(sessionStorage.getItem('cartItems'));
+
+            let cartContainer = document.getElementById("cart-container");
+
+            let cartHead = document.getElementById("cart-head");
+
+            let cartBtn = document.getElementById("cartBtn");
+
+            let cartH4 = document.getElementById("cart-h4");
+
+            let cartTotal = 0;
+
+            cartContainer.innerHTML = ''; 
+
+            if(!cartItems || cartItems.length === 0){
+                cartContainer.innerHTML = '<h3 class="empty-cart">Your Cart is Empty</h3>';
+                cartHead.style.display = 'none';
+                cartBtn.style.display = 'none';
+                cartH4.style.display = 'none';
+                return;
+            }
+
+            cartHead.style.display = 'table-header-group'; 
+            cartBtn.style.display = 'block'; 
+            cartH4.style.display = 'block';
+
+            for(cartItem of cartItems){
+                cartContainer.innerHTML += `
+                <tr>
+                    <td><img src="${cartItem.image}" width="20%"></td>
+                    
+                        <td width="20%">${cartItem.brand}</td>
+                        <td width="20%">${cartItem.name}</td>
+                        
+                        <td width="20%">&#8377; ${cartItem.price}</td>
+                        <td width="20%">${cartItem.quantity}</td>
+                </tr>   
+                `;
+                cartTotal += cartItem.price;
+            };
+            cartH4.innerHTML = `Total Amount : ${cartTotal}`
+        }
+
+        function clearCart(){
+            sessionStorage.removeItem('cartItems');
+            loadCartItems();
+        }
+
+         // Load cart items on page load
+        window.onload = loadCartItems;
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
